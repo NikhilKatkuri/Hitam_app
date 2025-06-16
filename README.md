@@ -1,4 +1,20 @@
-# 🎓 HITAM Smart Campus OS
+## 👑 Project Ownership
+
+This project — **HITAM Smart Campus OS** — is the original work of **Nikhil Katkuri**. All ideas, source code, structure, and design are the intellectual property of the owner unless otherwise credited.
+
+## 🔧 **Major Collaborators**:
+
+- **Dhanudeep** – Co-developer,systems collaborator and Communication Coordinator
+- **Saidev** – Co-developer, Feature contributor and architectural reviewer
+
+All contributions have been made under the ownership and direction of Nikhil Katkuri. Unauthorized use or redistribution of this project, in whole or in part, is strictly prohibited.
+
+This software and all its contents are protected under copyright law.  
+**Unauthorized copying, cloning, distribution, or commercial use is strictly prohibited**.
+
+This project is not licensed under any public open-source license. Any reuse or adaptation of the code, in part or in whole, without **written permission** from the owner is a **legal violation** and may result in action under the **Indian Copyright Act, 1957**.
+
+# 🎓 HITAM Smart Campus OS :
 
 Welcome to the **HITAM Smart Campus OS** — a unified digital platform designed to transform the way our college operates. Built using **Flutter**, this project empowers students, faculty, HODs, and administrators with powerful tools, automation, and analytics to drive a modern, transparent, and efficient campus experience.
 
@@ -85,9 +101,14 @@ If you're interested in collaborating or contributing — whether you're into Fl
 
 ---
 
+## ⚠️ Strict Notice
+
+Unauthorized cloning, copying, or redistribution of this project is **strictly prohibited**. This project is intended solely for educational collaboration within the HITAM community. Please respect the intellectual effort and originality behind this work.
+
 ## 📬 Contact
 
 Built by: Nikhil Katkuri  
 Collaborator: Dhanudeep , saidev \
 Email: [knikhil07k@gmail.com]  
-GitHub: [https://github.com/NikhilKatkuri]
+GitHub: [https://github.com/NikhilKatkuri]\
+© 2025 Nikhil Katkuri. All Rights Reserved.
