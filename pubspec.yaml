@@ -1,0 +1,146 @@
+name: hitam_app
+description: "A new Flutter project."
+
+# Prevents accidental publication to pub.dev for private packages.
+publish_to: "none"
+
+# Define your application's version and build number.
+# Read more about versioning:
+# Android: https://developer.android.com/studio/publish/versioning
+# iOS: https://developer.apple.com/documentation/bundleresources/information_property_list/cfbundleshortversionstring
+# Windows: https://learn.microsoft.com/en-us/windows/win32/msi/productversion-property
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1 # Ensure this matches your Flutter SDK version
+
+# Dependencies for your application.
+# For auto-upgrading dependencies, run `flutter pub upgrade --major-versions`.
+# To see available newer versions, run `flutter pub outdated`.
+# Find packages: https://pub.dev/
+dependencies:
+  flutter:
+    sdk: flutter
+  go_router: ^15.2.0
+  provider: ^6.0.5
+  cupertino_icons: ^1.0.8
+  flutter_launcher_icons: ^0.14.4
+  flutter_svg: ^2.1.0
+  flutter_native_splash: ^2.4.6
+  http: ^1.1.0
+  shared_preferences: ^2.5.3
+# Development dependencies.
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Recommended lints for good coding practices.
+  # Configured in `analysis_options.yaml`.
+  # See: https://docs.flutter.dev/tools/linter
+  flutter_lints: ^6.0.0
+
+# General Dart package information: https://dart.dev/tools/pub/pubspec
+
+# Flutter-specific configuration.
+flutter:
+  # Ensures Material Icons are included.
+  # See: https://docs.flutter.dev/ui/interactivity/icons#material-design-icons
+  uses-material-design: true
+
+  # Assets to include in your application bundle.
+  # For resolution-aware images: https://docs.flutter.dev/ui/assets-and-images/asset-resolution
+  # For assets from packages: https://docs.flutter.dev/ui/assets-and-images/assets-from-packages
+  assets:
+    - assets/images/
+    - assets/images/undraw_hire_hadq.png
+    - assets/images/undraw_reading-book_qe4h.png
+    - assets/images/undraw_professor_d7zn.png
+    - assets/images/undraw_teacher_s628.png
+    - assets/fonts/inter/
+    - assets/fonts/poppins/
+
+  # Custom fonts for your application.
+  # See: https://docs.flutter.dev/ui/assets-and-images/fonts
+  fonts:
+    - family: inter
+      fonts:
+        # Variable fonts like Inter-VariableFont_opsz,wght.ttf handle multiple weights
+        # within a single file. Flutter typically handles this automatically,
+        # but specify 'style: italic' for italic variants.
+        - asset: assets/fonts/inter/Inter-Italic-VariableFont_opsz,wght.ttf
+          style: italic
+        - asset: assets/fonts/inter/Inter-VariableFont_opsz,wght.ttf # Main variable font
+          # weight: 400 # Optional: default weight for the family if not specified elsewhere
+
+    - family: poppins
+      fonts:
+        # Map each font file to its correct numerical weight (100-900)
+        # and style (normal/italic).
+        - asset: assets/fonts/poppins/Poppins-Black.ttf
+          weight: 900
+        - asset: assets/fonts/poppins/Poppins-BlackItalic.ttf
+          weight: 900
+          style: italic
+        - asset: assets/fonts/poppins/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/poppins/Poppins-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: assets/fonts/poppins/Poppins-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/poppins/Poppins-ExtraBoldItalic.ttf
+          weight: 800
+          style: italic
+        - asset: assets/fonts/poppins/Poppins-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/poppins/Poppins-ExtraLightItalic.ttf
+          weight: 200
+          style: italic
+        - asset: assets/fonts/poppins/Poppins-Italic.ttf
+          weight: 400 # Regular Italic
+          style: italic
+        - asset: assets/fonts/poppins/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/poppins/Poppins-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: assets/fonts/poppins/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/poppins/Poppins-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/poppins/Poppins-Regular.ttf
+          weight: 400 # Regular
+        - asset: assets/fonts/poppins/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/poppins/Poppins-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/poppins/Poppins-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/poppins/Poppins-ThinItalic.ttf
+          weight: 100
+          style: italic
+
+# launcher icon config
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/hitam_logo.png"
+
+flutter_native_splash:
+  color: "#4DB03C" # Background color
+  image: assets/images/Hitam_Tree_white.png # Splash image
+  android: true
+  ios: true
+  fullscreen: true
+
+  android_gravity: center
+  ios_content_mode: center
+
+  android_12:
+    image: assets/images/Hitam_Tree_white.png
+    icon_background_color: "#4DB03C"
+    image_dark: assets/images/Hitam_Tree_white.png
+    icon_background_color_dark: "#4DB03C"

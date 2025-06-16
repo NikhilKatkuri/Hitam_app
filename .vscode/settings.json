@@ -1,0 +1,21 @@
+{
+  // Flutter & Dart: Performance and UX
+  "dart.sdkPath": null,
+  "flutter.sdkPath": null,
+  "dart.analysisExcludedFolders": ["build", ".dart_tool", ".idea", ".vscode"],
+  "dart.promptToGetPackages": false,
+  "dart.runPubGetOnPubspecChanges": "never",
+  "editor.formatOnSave": true,
+  "dart.lineLength": 100,
+  "dart.previewFlutterUiGuides": true,
+  "dart.openDevTools": "never",
+  "flutter.hotReloadOnSave": true,
+  "flutter.inspector.showRenderObject": false,
+
+  // Java: Controlled build updates
+  "java.configuration.updateBuildConfiguration": "interactive",
+
+  // General: Fast startup
+  "telemetry.enableTelemetry": false,
+  "workbench.startupEditor": "none"
+}
