@@ -1,0 +1,22 @@
+Copyright © 2025 Nikhil Katkuri. All Rights Reserved.
+
+This software and all associated files, including but not limited to source code, designs, assets, and documentation (collectively referred to as the “Software”), are the exclusive intellectual property of Nikhil Katkuri.
+
+Permission is hereby NOT granted to any individual, organization, or entity to copy, reproduce, distribute, modify, sublicense, or reuse any part of this Software for personal, academic, or commercial purposes.
+
+This Software is provided solely for demonstration, controlled collaboration, and educational purposes with explicit written permission from the owner.
+
+Strictly prohibited actions include, but are not limited to:
+- Cloning or forking this repository or codebase
+- Republishing or re-uploading any portion of the code or design
+- Creating derivative works or using this code in any other project
+- Claiming any part of the project as your own
+
+Violation of these terms is a breach of the Indian Copyright Act, 1957  
+and may result in legal action.
+
+For contribution or reuse inquiries, contact:
+
+Nikhil Katkuri  
+Email: knikhil07k@gmail.com  
+GitHub: https://github.com/NikhilKatkuri/Hitam_app
