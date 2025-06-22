@@ -25,7 +25,7 @@ dependencies:
   provider: ^6.0.5
   cupertino_icons: ^1.0.8
   flutter_launcher_icons: ^0.14.4
-  flutter_svg: ^2.1.0
+  flutter_svg: ^2.2.0
   flutter_native_splash: ^2.4.6
   http: ^1.1.0
   shared_preferences: ^2.5.3
@@ -58,6 +58,15 @@ flutter:
     - assets/images/undraw_teacher_s628.png
     - assets/fonts/inter/
     - assets/fonts/poppins/
+    - assets/vectors/
+    - assets/vectors/chat.svg
+    - assets/vectors/chat_outline.svg
+    - assets/vectors/course.svg
+    - assets/vectors/course_outline.svg
+    - assets/vectors/home.svg
+    - assets/vectors/home_outline.svg
+    - assets/vectors/user.svg
+    - assets/vectors/user_outline.svg
 
   # Custom fonts for your application.
   # See: https://docs.flutter.dev/ui/assets-and-images/fonts

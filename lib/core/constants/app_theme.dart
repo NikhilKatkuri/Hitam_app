@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hitam_app/core/constants/app_colors.dart';
 
 class AppTheme {
+  static final String title = "Hitam";
   // Typography
   static const footerText = TextStyle(
     fontSize: 12,

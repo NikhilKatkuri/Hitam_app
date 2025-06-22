@@ -49,7 +49,7 @@ class _StudentDashboardState extends State<StudentDashboard> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Student '),
+        title: const Text('Student'),
         actions: [
           IconButton(
             icon: const Icon(Icons.logout),
@@ -61,14 +61,17 @@ class _StudentDashboardState extends State<StudentDashboard> {
         ],
       ),
       body: SafeArea(
-        child: Center(
-          child: Column(
-            children: [
-              Text(
-                'Welcome, $email $userName',
-                style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
-              ),
-            ],
+        child: Padding(
+          padding: EdgeInsets.all(12),
+          child: Center(
+            child: Column(
+              children: [
+                Text(
+                  'Welcome, $email $userName',
+                  style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                ),
+              ],
+            ),
           ),
         ),
       ),

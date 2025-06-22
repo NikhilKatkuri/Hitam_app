@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:provider/provider.dart';
 
 import 'package:hitam_app/features/auth/presentation/pages/admin_login_page.dart';
 import 'package:hitam_app/features/auth/presentation/pages/faculty_login_page.dart';
@@ -7,9 +8,12 @@ import 'package:hitam_app/features/auth/presentation/pages/student_login_page.da
 import 'package:hitam_app/features/auth/presentation/provider/auth_provider_context.dart';
 import 'package:hitam_app/features/faculty/presentation/pages/faculty_dashboard.dart';
 import 'package:hitam_app/features/splash/presentation/app_splash.dart';
+import 'package:hitam_app/features/student/presentation/pages/screens/chat/student_chat.dart';
+import 'package:hitam_app/features/student/presentation/pages/screens/courses/student_course.dart';
+import 'package:hitam_app/features/student/presentation/pages/screens/profile/student_profile.dart';
 import 'package:hitam_app/features/student/presentation/pages/student_dashboard.dart';
+import 'package:hitam_app/features/student/presentation/widgets/base_screen.dart';
 import 'package:hitam_app/features/welcome/presentation/welcome_screen.dart';
-import 'package:provider/provider.dart';
 
 class RouteAuth {
   final String title;
@@ -26,6 +30,10 @@ class AppRoutes {
   static const String adminLoginRoute = '/login/admin';
   static const String facultyDashboardRoute = '/dashboard/faculty';
   static const String studentDashboardRoute = '/dashboard/student';
+  static const String studentCourseRoute = 'course'; // note: ** Relative path to student screen **
+  static const String studentChatRoute = 'chat'; // note: ** Relative path to student screen **
+  static const String studentProfileRoute =
+      'profile'; // note: ** Relative path to student screen **
 
   static final List<RouteAuth> roleRoutes = [
     RouteAuth(title: "Login as Student", route: studentLoginRoute),
@@ -39,6 +47,7 @@ class AppRoutes {
       final auth = Provider.of<AuthProviderContext>(context, listen: false);
       final isLoggedIn = auth.authStatus == AuthStatus.authenticated;
       final isGoingToLogin = state.uri.toString().startsWith('/login');
+
       if (isLoggedIn && isGoingToLogin) {
         switch (auth.userRole) {
           case UserRole.student:
@@ -49,11 +58,13 @@ class AppRoutes {
             return welcomeRoute;
         }
       }
+
       if (!isLoggedIn &&
           (state.uri.toString() == facultyDashboardRoute ||
-              state.uri.toString() == studentDashboardRoute)) {
+              state.uri.toString().startsWith('/dashboard/student'))) {
         return welcomeRoute;
       }
+
       return null;
     },
     routes: [
@@ -63,7 +74,30 @@ class AppRoutes {
       GoRoute(path: facultyLoginRoute, builder: (context, state) => const FacultyLoginPage()),
       GoRoute(path: adminLoginRoute, builder: (context, state) => const AdminLoginPage()),
       GoRoute(path: facultyDashboardRoute, builder: (context, state) => const FacultyDashboard()),
-      GoRoute(path: studentDashboardRoute, builder: (context, state) => const StudentDashboard()),
+      StatefulShellRoute.indexedStack(
+        builder: (context, state, navigationShell) => BaseScreen(navigationShell: navigationShell),
+        branches: [
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: studentDashboardRoute,
+                builder: (context, state) => const StudentDashboard(),
+                routes: [
+                  GoRoute(
+                    path: studentCourseRoute,
+                    builder: (context, state) => const StudentCourse(),
+                  ),
+                  GoRoute(path: studentChatRoute, builder: (context, state) => const StudentChat()),
+                  GoRoute(
+                    path: studentProfileRoute,
+                    builder: (context, state) => const StudentProfile(),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ],
+      ),
     ],
     errorBuilder: (context, state) =>
         const Scaffold(body: Center(child: Text('404 - Page Not Found'))),
