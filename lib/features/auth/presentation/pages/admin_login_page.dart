@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hitam_app/core/constants/app_theme.dart';
+import 'package:hitam_app/core/routes/app_routes.dart';
 import 'package:hitam_app/core/utils/app_images.dart';
 
 class AdminLoginPage extends StatefulWidget {
@@ -58,7 +59,7 @@ class _AdminLoginPageState extends State<AdminLoginPage> {
                               await Future.delayed(const Duration(milliseconds: 100));
                               if (!mounted) return;
                               // ignore: use_build_context_synchronously
-                              context.pop();
+                              context.go(AppRoutes.welcomeRoute);
                             },
                             child: const Icon(Icons.arrow_back),
                           ),

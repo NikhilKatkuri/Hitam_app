@@ -67,6 +67,8 @@ flutter:
     - assets/vectors/home_outline.svg
     - assets/vectors/user.svg
     - assets/vectors/user_outline.svg
+    - assets/vectors/notification.svg
+    - assets/vectors/search.svg
 
   # Custom fonts for your application.
   # See: https://docs.flutter.dev/ui/assets-and-images/fonts

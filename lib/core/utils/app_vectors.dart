@@ -7,4 +7,6 @@ class AppVectors {
   static const String chatOutline = 'assets/vectors/chat_outline.svg';
   static const String user = 'assets/vectors/user.svg';
   static const String userOutline = 'assets/vectors/user_outline.svg';
+  static const String notification = 'assets/vectors/notification.svg';
+  static const String search = 'assets/vectors/search.svg';
 }
