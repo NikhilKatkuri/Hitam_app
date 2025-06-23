@@ -101,6 +101,59 @@ If you're interested in collaborating or contributing — whether you're into Fl
 
 ---
 
+## 👨‍💻 Dev Contributors (Codebase Maintainers)
+
+These contributors are actively involved in writing, reviewing, and maintaining the project codebase:
+
+- **Dhanudeep** — Systems Integrator, Testing Lead, and Team Lead
+- **Saidev** — Content Manager / Data Curator
+- **Nikhil Katkuri** — Project Lead, Core Developer, and Release Manager
+- **Saikumar936-ROY** — Feature Contributor, Core Developer, and Code Reviewer
+
+# 🔄 Contribution Workflow (for Collaborators)
+
+## 1️⃣ Branching
+
+All collaborators (except Project Lead) should work on their own branches.
+
+**Branch naming:** Use your name or GitHub username as the branch name.
+
+Example:
+
+```bash
+dhanudeep-feature
+
+saidev-update
+
+saikumar936-bugfix
+```
+
+## 2️⃣ Development
+
+Make your changes in your branch.
+
+Keep commits clear and meaningful.
+
+## 3️⃣ Sync with Main
+
+Regularly pull from main branch to keep your branch updated.
+
+## 4️⃣ Merge Requests
+
+Once your feature is complete and tested:
+
+Create a Pull Request (PR) to merge into main.
+
+The Project Lead (Nikhil Katkuri) will review and approve the PR.
+
+Once approved, PR will be merged into main.
+
+## 5️⃣ Do Not Push Directly to Main
+
+No collaborator should push directly to main branch.
+
+All changes must go through Pull Requests.
+
 ## ⚠️ Strict Notice
 
 Unauthorized cloning, copying, or redistribution of this project is **strictly prohibited**. This project is intended solely for educational collaboration within the HITAM community. Please respect the intellectual effort and originality behind this work.
